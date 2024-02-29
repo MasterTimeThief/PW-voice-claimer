@@ -1,0 +1,11 @@
+<div class="character" *ngIf="character">
+    <img class="portrait" src="../../assets/{{character.file}}">
+    <span class="under-portrait">
+        <button type="button" (click)="startTimer()">
+            <span class="timer">{{ timeLeft$ * 1000 | date:'mm:ss' }}</span>
+        </button>
+        <span class="voice">
+            <input id="hero-name" placeholder="{{character.name}}">
+        </span>
+    </span>
+</div>
