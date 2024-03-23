@@ -1,12 +1,13 @@
-<ul class="characters">
-  <li *ngFor="let char of characters; let i = index">
-    <div *ngIf="i>0"><button type="button" class="delete" (click)="deleteCharacter(i)">x</button></div>
-    <app-character-detail [character]="char" [index]="i"></app-character-detail>
-  </li>
-</ul>
-
 <div class="form-group">
   <select #newChar class="character-select" (change)="addCharacter(newChar.value)" id="char" >
     <option *ngFor="let char of allCharacters" [value]="char.id">{{char.name}}</option>
   </select>
+</div>
+
+<div class="wrapper">
+  <ul class="character-list">
+    <li *ngFor="let char of characters; let i = index">
+      <app-character-detail (deleteEvent)="deleteCharacter($event)" [character]="char" [index]="i"></app-character-detail>
+    </li>
+  </ul>
 </div>

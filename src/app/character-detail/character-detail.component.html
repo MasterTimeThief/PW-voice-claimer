@@ -1,11 +1,27 @@
 <div class="character" *ngIf="character">
-    <img class="portrait" src="../../assets/{{character.file}}">
-    <span class="under-portrait">
-        <button type="button" (click)="startTimer()">
-            <span class="timer">{{ timeLeft$ * 1000 | date:'mm:ss' }}</span>
-        </button>
-        <span class="voice">
-            <input id="hero-name" placeholder="{{character.name}}">
-        </span>
-    </span>
+    <img class="portrait" [ngStyle]="{'margin-bottom': -1*character.margin+'px'}" src="../../assets/{{character.file}}">
+
+    <div class="under-portrait">
+        <div class="button-container">
+            <div class="button-border left-button">
+                <div class="button-middle left-button">
+                    <button type="button" class="left-button" (click)="startTimer()">
+                        <span class="timer">{{ timeLeft$ > 0 ? (timeLeft$ * 1000 | date:'mm:ss') : "Start" }}</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="button-container-right" *ngIf="index && index>0">
+            <div class="button-border right-button">
+                <div class="button-middle-right right-button">
+                    <button type="button" class="right-button" (click)="deleteCharacter()">
+                        <span class="delete">X</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="voice">
+            <input id="voice" autocomplete="off" [(ngModel)]="voice" placeholder="{{character.name}}">
+        </div>
+    </div>
 </div>

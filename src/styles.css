@@ -4,6 +4,10 @@
   src: url(assets/FOT-ModeMinBLargeStd-R.otf) format("opentype");
 }
 
+html, body {
+  background-color: rgb(255, 0, 255);
+}
+
 h1 {
     color: #369;
     font-family: Arial, Helvetica, sans-serif;
@@ -18,31 +22,75 @@ body, input[type="text"], button {
     color: #333;
     font-family: Cambria, Georgia, serif;
 }
+
+.character {
+  position: relative;
+  width: 100%;
+}
+
+.left-button {
+  clip-path: polygon(83% 0%, 100% 50%, 100% 100%, 0 100%, 0 0);
+}
+
+.right-button {
+  clip-path: polygon(50% 0%, 100% 0%, 100% 100%, 0 100%, 0 50%);
+}
+
+.button-container {
+  position: absolute;
+  height: 100px;
+  width: 300px;
+  font-family: "AA";
+  margin-bottom: 6px;
+}
+
+.button-container-right {
+  position: absolute;
+  right: 0px;
+  top: 30px;
+  height: 69px;
+  width: 69px;
+  font-family: "AA";
+  margin-bottom: 6px;
+}
+
+.button-border {
+  background-color: white;
+  height: 100%;
+  width: 100%;
+  padding:3px;
+}
+
+.button-middle {
+  background-color: black;
+  height: 91%;
+  width: 97%;
+  padding: 4px;
+}
+
+.button-middle-right {
+  background-color: black;
+  height: 61px;
+  width: 61px;
+  padding: 4px;
+}
+
 button {
   background-color: #762f03;
-  border-radius: 10px;
+  height: 100%;
+  width: 100%;
+  /*border-radius: 15px;*/
   border-width: 3px;
   border-color: black;
   cursor: pointer;
   color: white;
   font-size: 1.2rem;
-  padding: 1rem;
-  margin-right: 1rem;
+  padding: 1rem 0 1rem;
   font-family: "AA";
-}
-button:before {
-  content:'';
-  position:absolute;
-  z-index: -1;
-  top:10px;
-  left:10px;
-  right:10px;
-  bottom:10px;
-  background-color: white;
 }
 
 button:hover {
-    background-color: #dc5e0f;
+    background-color: #9c4108;
     color: white;
 }
 button:disabled {
@@ -52,80 +100,80 @@ button:disabled {
 }
 
 button:active {
-  background-color: #525252;
+  background-color: #EFA521;
   color: #fafafa;
-}
-
-button.selected {
-  background-color: black;
-  color: white;
-}
-
-button.selected:hover {
-  background-color: #505050;
-  color: white;
-}
-
-button.selected:active {
-  background-color: black;
-  color: white;
 }
 
 /* everywhere else */
 * {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: "AA";
 }
 
-.characters {
+.wrapper {
+  height:200em;
+  width:800px;
+  /*border: 5px solid red;*/
+}
+
+.character-list {
     margin: 0 0 2em 0;
     list-style-type: none;
     padding: 0;
-    width:35em;
 }
 
-.characters img {
+.character .portrait {
   width: 100%;
+  margin-bottom:-82px;
 }
 
-.characters li {
-  display: grid;
-}
-
-.characters .portrait {
-  margin: 0 0 -82px 20px;
-}
-
-.characters .under-portrait {
-  flex: 1;
-  width: 40em;
-  cursor: pointer;
+.under-portrait {
   position: relative;
-  left: 0;
-  background-color: #EEE;
-  margin: .5em;
+  flex: 1;
+  width: 100%;
+  height: 225px; /*<-- This can maybe fix spacing issues*/
   padding: 0;
-  border-radius: 4px;
-  display: flex;
   align-items: stretch;
-  height: 4.2em;
 }
 
-.characters .timer {
-  display: inline;
+.timer {
   font-family: "AA";
-  font-size: xxx-large;
+  font-size: 80px;
   line-height: 0.6em;
-  border-radius: 4px;
-  height: 100%;
+  margin-left: -0.25em;
 }
 
-.characters .voice input{
-  font-size: 40px;
+.delete {
+  font-family: "AA";
+  color: white;
+  font-size: 30px;
+  line-height: 0.6em;
+  margin-left: 0.2em;
+}
+
+.voice {
+  position: absolute;
+  background-color: #20276D;
+  height: 7em;
+  margin-top: 105px;
+  width: 100%;
+  border-radius: 1em;
+  border: 5px gray solid;
+}
+
+.voice input{
+  font-size: 70px;
+  color: #00F700;
   align-self: center;
   height: 100%;
+  margin-top: -7px;
+  margin-left: 30px;
   border: none;
   background: none;
   font-family: "AA";
+}
+
+.voice input::placeholder {
+  color: white;
 }
 
 .character-select {
