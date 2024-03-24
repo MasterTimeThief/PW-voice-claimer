@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { FormsModule } from '@angular/forms';
 import { RouterOutlet } from '@angular/router';
 import { CommonModule } from '@angular/common';
 import { Character } from './character';
@@ -12,6 +13,7 @@ import { CharacterDetailComponent } from './character-detail/character-detail.co
     RouterOutlet,
     CommonModule,
     CharacterDetailComponent,
+    FormsModule,
   ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
@@ -21,15 +23,17 @@ export class AppComponent {
   allCharacters = CHARACTERS;
   
   characters: Character[] = [];
+  selectedChar = 0;
 
   constructor() {
     this.characters[0] = this.allCharacters[0];
   }
 
   addCharacter(char: string) {
-    var charId = parseInt(char);
+    //var charId = parseInt(char);
 
-    this.characters.push(this.allCharacters[charId - 1]);
+    this.characters.push(this.allCharacters[this.selectedChar - 1]);
+    this.selectedChar = 0;
   }
 
   deleteCharacter(index: number) {

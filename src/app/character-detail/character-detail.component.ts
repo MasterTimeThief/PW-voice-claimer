@@ -26,16 +26,38 @@ export class CharacterDetailComponent {
   timerLength = 600;
   timeLeft$: number = 0;
   interval: any;
+  isPaused: boolean = false;
+  isTimer: boolean = false;
 
   startTimer() {
-    clearInterval(this.interval);
-    this.timeLeft$ = this.timerLength;
+    if (!this.isTimer) {
+      this.isTimer = true;
+      clearInterval(this.interval);
+      this.timeLeft$ = this.timerLength;
+      this.setTimer();
+    }
+  }
+
+  pauseTimer() {
+    if (this.isTimer) {
+      if (this.isPaused) {
+        this.setTimer();
+      }
+      else {
+        clearInterval(this.interval);
+      }
+      this.isPaused = !this.isPaused;
+    }
+  }
+
+  setTimer() {
     this.interval = setInterval(() => {
       if(this.timeLeft$ > 0) {
         this.timeLeft$--;
         if(this.timeLeft$ == 0) this.voice = "";
       } else {
         clearInterval(this.interval);
+        this.isTimer = false;
       }
     },1000)
   }

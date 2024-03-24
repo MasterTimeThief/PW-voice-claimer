@@ -36,10 +36,19 @@ body, input[type="text"], button {
   clip-path: polygon(50% 0%, 100% 0%, 100% 100%, 0 100%, 0 50%);
 }
 
-.button-container {
+.button-container-pause {
+  position: absolute;
+  height: 100px;
+  width: 100px;
+  font-family: "AA";
+  margin-bottom: 6px;
+}
+
+.button-container-left {
   position: absolute;
   height: 100px;
   width: 300px;
+  left: 100px;
   font-family: "AA";
   margin-bottom: 6px;
 }
@@ -59,6 +68,13 @@ body, input[type="text"], button {
   height: 100%;
   width: 100%;
   padding:3px;
+}
+
+.button-middle-pause {
+  background-color: black;
+  height: 91%;
+  width: 90%;
+  padding: 4px;
 }
 
 .button-middle {
@@ -94,7 +110,7 @@ button:hover {
     color: white;
 }
 button:disabled {
-  background-color: #eee;
+  background-color: #808484;
   color: #aaa;
   cursor: auto;
 }
@@ -142,6 +158,18 @@ button:active {
   margin-left: -0.25em;
 }
 
+.pause {
+  font-family: "AA";
+  font-size: 35px;
+  line-height: 1.5em;
+  margin-left: 0.25em;
+}
+
+.pause-img {
+  height: 50px;
+  margin: 3px 0 0 -4px;
+}
+
 .delete {
   font-family: "AA";
   color: white;
@@ -163,10 +191,10 @@ button:active {
 .voice input{
   font-size: 70px;
   color: #00F700;
-  align-self: center;
   height: 100%;
-  margin-top: -7px;
-  margin-left: 30px;
+  width: 97%;
+  margin-top: -5px;
+  padding-left: 25px;
   border: none;
   background: none;
   font-family: "AA";

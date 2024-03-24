@@ -1,8 +1,19 @@
 <div class="character" *ngIf="character">
-    <img class="portrait" [ngStyle]="{'margin-bottom': -1*character.margin+'px'}" src="../../assets/{{character.file}}">
+    <img class="portrait" [ngStyle]="{'margin-bottom': -1*character.margin+'px'}" src="../../assets/sprites/{{character.file}}">
 
     <div class="under-portrait">
-        <div class="button-container">
+
+        <div class="button-container-pause">
+            <div class="button-border">
+                <div class="button-middle-pause">
+                    <button type="button" [disabled]="!isTimer" class="pause-button" (click)="pauseTimer()">
+                        <img class="pause-img" src="assets/{{isPaused ? 'play' : 'pause'}}.svg">
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <div class="button-container-left">
             <div class="button-border left-button">
                 <div class="button-middle left-button">
                     <button type="button" class="left-button" (click)="startTimer()">
@@ -11,6 +22,7 @@
                 </div>
             </div>
         </div>
+
         <div class="button-container-right" *ngIf="index && index>0">
             <div class="button-border right-button">
                 <div class="button-middle-right right-button">
@@ -20,8 +32,10 @@
                 </div>
             </div>
         </div>
+
         <div class="voice">
             <input id="voice" autocomplete="off" [(ngModel)]="voice" placeholder="{{character.name}}">
         </div>
+
     </div>
 </div>

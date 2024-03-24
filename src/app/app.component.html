@@ -1,5 +1,6 @@
 <div class="form-group">
-  <select #newChar class="character-select" (change)="addCharacter(newChar.value)" id="char" >
+  <select #newChar class="character-select" (change)="addCharacter(newChar.value)" id="char" [(ngModel)]="selectedChar">
+    <option value="0">- Select Character -</option>
     <option *ngFor="let char of allCharacters" [value]="char.id">{{char.name}}</option>
   </select>
 </div>
