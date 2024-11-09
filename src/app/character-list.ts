@@ -9,11 +9,11 @@ export const CHARACTERS: Character[] = [
     { id: 4, margin: 306, name: "The Judge",            file: "judge.gif" },
     { id: 5, margin: 115, name: "Dick Gumshoe",         file: "gumshoe.gif" },
     //{ id: 6, margin: 215, name: "Winston Payne",        file: "payne.gif" },
-    { id: 6, margin: 215, name: "Godot",        file: "aa3/godot.gif" },
+    { id: 6, margin: 241, name: "Godot",        file: "aa3/godot.gif" },
     
     //Case 1
     { id: 7, margin: 115, name: "Marvin Grossberg",     file: "aa3/y-grossberg.gif" },
-    { id: 8, margin: 115, name: "Phoenix Wright",       file: "aa3/y-phoenix.gif" },
+    { id: 8, margin: 115, name: "Young Phoenix Wright",       file: "aa3/y-phoenix.gif" },
     { id: 9, margin: 215, name: "Dahlia Hawthorne",     file: "aa3/dahlia.gif" },
 
     //Case 2
