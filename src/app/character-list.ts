@@ -23,22 +23,24 @@ export const CHARACTERS: Character[] = [
     { id: 13, margin: 115, name: "Desiree DeLite",      file: "aa3/desiree.gif" },
     { id: 14, margin: 115, name: "Larry Butz",          file: "aa3/larryKBE.gif" },
     
-    /*
     //Case 3
     
-    { id: 0, margin: 115, name: "Maggey Byrde",      file: "file.gif" },
-    { id: 0, margin: 115, name: "Jean Armstrong",      file: "file.gif" },
-    { id: 0, margin: 115, name: "Victor Kudo",      file: "file.gif" },
-    { id: 0, margin: 115, name: "Viola Cadaverini",      file: "file.gif" },
-    { id: 0, margin: 115, name: "Furio Tigre",      file: "file.gif" },
-    { id: 0, margin: 115, name: "Lisa Basil",      file: "file.gif" },
+    { id: 15, margin: 115, name: "Maggey Byrde",      file: "aa3/maggey.gif" },
+    { id: 16, margin: 115, name: "Jean Armstrong",      file: "aa3/armstrong.gif" },
+    { id: 17, margin: 115, name: "Victor Kudo",      file: "aa3/victor.gif" },
+    //{ id: 18, margin: 115, name: "Viola Cadaverini",      file: "aa3/viola.gif" },
+    { id: 18, margin: 115, name: "ゴゴゴゴゴゴゴゴ",      file: "aa3/viola.gif" },
+    { id: 19, margin: 115, name: "Xin Ehop",      file: "aa3/tigre.gif" },
+    //{ id: 19, margin: 115, name: "Furio Tigre",      file: "file.gif" },
+    { id: 20, margin: 115, name: "Lisa Basil",      file: "aa3/lisa.gif" },
     
-    
-    
-    
+    /*
+    //Case 4
     { id: 0, margin: 115, name: "name",      file: "file.gif" },
     { id: 0, margin: 115, name: "name",      file: "file.gif" },
     { id: 0, margin: 115, name: "name",      file: "file.gif" },
+    
+    //Case 5
     { id: 0, margin: 115, name: "name",      file: "file.gif" },
     { id: 0, margin: 115, name: "name",      file: "file.gif" },
     { id: 0, margin: 115, name: "name",      file: "file.gif" },
