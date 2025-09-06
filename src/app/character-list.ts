@@ -72,4 +72,5 @@ export const CHARACTERS: Character[] = [
     { id: 4, margin: 800, name: "Rauru Gotobed",    file: "zelda/Rauru.png" },
     { id: 5, margin: 1200, name: "Malon Kieksyte",    file: "zelda/Malon.png" },
     { id: 6, margin: 1200, name: "Impa Cok",     file: "zelda/Impa.png" },
+    { id: 7, margin: 1200, name: "Ingo Bingo",     file: "zelda/Ingo.png" },
 ];
