@@ -2,8 +2,22 @@ import { Character } from "./character";
 
 export const CHARACTERS: Character[] = [
     // MAIN CAST
+
+
+
+
+
+
+
+
+
+
+
+
+    /*
     //{ id: 1, margin: 215, name: "Mia Fey",              file: "aa3/y-mia.gif" },
-    { id: 1, margin: 215, name: "Phoenix Wright",       file: "phoenix.gif" },
+    //{ id: 1, margin: 215, name: "Phoenix Wright",       file: "phoenix.gif" },
+    { id: 1, margin: 215, name: "Miles Edgeworth",       file: "aa3/edgeworthDA.gif" },
     { id: 2, margin: 115, name: "Maya Fey",             file: "maya.gif" },
     //{ id: 2, margin: 115, name: "Maya Fey",             file: "aa3/maya-cosplay.gif" },
     { id: 3, margin: 115, name: "Pearl Fey",            file: "pearl.gif" },
@@ -49,7 +63,13 @@ export const CHARACTERS: Character[] = [
     { id: 26, margin: 115, name: "Sister Bikini",      file: "aa3/bikini.gif" },
     { id: 27, margin: 115, name: "Elise Deauxnim",      file: "aa3/elise.gif" },
     { id: 28, margin: 115, name: "Laurice Deauxnim",      file: "aa3/laurice.gif" },
-    { id: 29, margin: 215, name: "Miles Edgeworth",      file: "aa3/edgeworthDA.gif" },
+    { id: 29, margin: 215, name: "Miles Edgeworth",      file: "edgeworth.gif" },
     { id: 30, margin: 115, name: "Franziska von Karma",      file: "franziska.gif" },
-    
+    */
+    { id: 1, margin: 1000, name: "Link Longbottom",     file: "zelda/Link.png" },
+    { id: 2, margin: 1300, name: "Zelda Saltaformaggio",    file: "zelda/Zelda.png" },
+    { id: 3, margin: 900, name: "Ganondorf Glydenbollocks",file: "zelda/Ganondorf.png" },
+    { id: 4, margin: 800, name: "Rauru Gotobed",    file: "zelda/Rauru.png" },
+    { id: 5, margin: 1200, name: "Malon Kieksyte",    file: "zelda/Malon.png" },
+    { id: 6, margin: 1200, name: "Impa Cok",     file: "zelda/Impa.png" },
 ];

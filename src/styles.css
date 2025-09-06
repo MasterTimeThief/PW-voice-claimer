@@ -26,6 +26,7 @@ body, input[type="text"], button {
 .character {
   position: relative;
   width: 100%;
+  overflow: hidden;
 }
 
 .left-button {
