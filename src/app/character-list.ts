@@ -4,16 +4,6 @@ export const CHARACTERS: Character[] = [
     // MAIN CAST
 
 
-
-
-
-
-
-
-
-
-
-
     /*
     //{ id: 1, margin: 215, name: "Mia Fey",              file: "aa3/y-mia.gif" },
     //{ id: 1, margin: 215, name: "Phoenix Wright",       file: "phoenix.gif" },
@@ -66,6 +56,10 @@ export const CHARACTERS: Character[] = [
     { id: 29, margin: 215, name: "Miles Edgeworth",      file: "edgeworth.gif" },
     { id: 30, margin: 115, name: "Franziska von Karma",      file: "franziska.gif" },
     */
+
+
+    /*
+    // Hero of Law
     { id: 1, margin: 1000, name: "Link Longbottom",     file: "zelda/Link.png" },
     { id: 2, margin: 1300, name: "Zelda Saltaformaggio",    file: "zelda/Zelda.png" },
     { id: 3, margin: 900, name: "Ganondorf Glydenbollocks",file: "zelda/Ganondorf.png" },
@@ -73,4 +67,31 @@ export const CHARACTERS: Character[] = [
     { id: 5, margin: 1200, name: "Malon Kieksyte",    file: "zelda/Malon.png" },
     { id: 6, margin: 1200, name: "Impa Cok",     file: "zelda/Impa.png" },
     { id: 7, margin: 1200, name: "Ingo Bingo",     file: "zelda/Ingo.png" },
+     */
+
+    //Ace Attorney Investigations
+
+    //Main characters
+    { id: 1, margin: 115, name: "Miles Edgeworth",     file: "aai/edge.png" },
+    { id: 2, margin: 115, name: "Dick Gumshoe",        file: "aai/tile001.png" },
+    { id: 3, margin: 115, name: "Kay Faraday",          file: "aai/tile010.png" },
+    { id: 4, margin: 115, name: "Franziska von Karma",  file: "aai/tile009.png" },
+    { id: 5, margin: 115, name: "Shi-Long Lang",       file: "aai/tile018.png" },
+    { id: 6, margin: 115, name: "Shih-na",             file: "aai/tile030.png" },
+    { id: 7, margin: 115, name: "Wendy Oldbag",          file: "aai/tile016.png" },
+    //{ id: 8, margin: 1200, name: "Larry Butz",          file: "aai/tile034.png" },
+
+
+    //Turnabout Visitor
+    { id: 8, margin: 115, name: "Jaques Portsman",          file: "aai/tile012.png" },
+    { id: 9, margin: 115, name: "Maggey Byrde",          file: "aai/tile012.png" },
+
+
+    //Turnabout Airline
+    { id: 10, margin: 115, name: "Rhoda Teneiro",          file: "aai/tile012.png" },
+    { id: 11, margin: 115, name: "Zinc Lablanc",          file: "aai/tile012.png" },
+    { id: 12, margin: 115, name: "Cammy Meele",          file: "aai/tile012.png" },
+    
+    //Turnabout 3
+    //{ id: 11, margin: 1200, name: "",          file: "aai/tile012.png" },
 ];
