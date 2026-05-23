@@ -83,14 +83,21 @@ export const CHARACTERS: Character[] = [
 
 
     //Turnabout Visitor
-    { id: 8, margin: 115, name: "Jaques Portsman",          file: "aai/tile012.png" },
-    { id: 9, margin: 115, name: "Maggey Byrde",          file: "aai/tile012.png" },
+    { id: 8, margin: 115, name: "Jaques Portsman",          file: "aai/tile002.png" },
+    { id: 9, margin: 115, name: "Maggey Byrde",          file: "aai/tile003.png" },
 
 
     //Turnabout Airline
-    { id: 10, margin: 115, name: "Rhoda Teneiro",          file: "aai/tile012.png" },
-    { id: 11, margin: 115, name: "Zinc Lablanc",          file: "aai/tile012.png" },
-    { id: 12, margin: 115, name: "Cammy Meele",          file: "aai/tile012.png" },
+    { id: 10, margin: 115, name: "Rhoda Teneiro",          file: "aai/tile006.png" },
+    { id: 11, margin: 115, name: "Zinc Lablanc",          file: "aai/tile007.png" },
+    { id: 12, margin: 115, name: "Cammy Meele",          file: "aai/tile008.png" },
+
+    //The Kidnapped Turnabout
+    { id: 12, margin: 115, name: "Mike Meekins",          file: "aai/tile014.png" },
+    { id: 12, margin: 115, name: "Lauren Paups",          file: "aai/tile019.png" },
+    { id: 12, margin: 115, name: "Ernest Amano",          file: "aai/tile011.png" },
+    { id: 12, margin: 115, name: "Lance Amano",          file: "aai/tile017.png" },
+    { id: 12, margin: 115, name: "Ema Skye",          file: "aai/tile015.png" },
     
     //Turnabout 3
     //{ id: 11, margin: 1200, name: "",          file: "aai/tile012.png" },
