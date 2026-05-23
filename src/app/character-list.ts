@@ -93,11 +93,11 @@ export const CHARACTERS: Character[] = [
     { id: 12, margin: 115, name: "Cammy Meele",          file: "aai/tile008.png" },
 
     //The Kidnapped Turnabout
-    { id: 12, margin: 115, name: "Mike Meekins",          file: "aai/tile014.png" },
-    { id: 12, margin: 115, name: "Lauren Paups",          file: "aai/tile019.png" },
-    { id: 12, margin: 115, name: "Ernest Amano",          file: "aai/tile011.png" },
-    { id: 12, margin: 115, name: "Lance Amano",          file: "aai/tile017.png" },
-    { id: 12, margin: 115, name: "Ema Skye",          file: "aai/tile015.png" },
+    { id: 13, margin: 115, name: "Mike Meekins",          file: "aai/tile014.png" },
+    { id: 14, margin: 115, name: "Lauren Paups",          file: "aai/tile019.png" },
+    { id: 15, margin: 115, name: "Ernest Amano",          file: "aai/tile011.png" },
+    { id: 16, margin: 115, name: "Lance Amano",          file: "aai/tile017.png" },
+    { id: 17, margin: 115, name: "Ema Skye",          file: "aai/tile015.png" },
     
     //Turnabout 3
     //{ id: 11, margin: 1200, name: "",          file: "aai/tile012.png" },
