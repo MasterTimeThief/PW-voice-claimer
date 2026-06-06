@@ -99,6 +99,16 @@ export const CHARACTERS: Character[] = [
     { id: 16, margin: 115, name: "Lance Amano",          file: "aai/tile017.png" },
     { id: 17, margin: 115, name: "Ema Skye",          file: "aai/tile015.png" },
     
-    //Turnabout 3
-    //{ id: 11, margin: 1200, name: "",          file: "aai/tile012.png" },
+    //Turnabout Reminiscence
+    { id: 18, margin: 115, name: "Byrne Faraday",          file: "aai/tile025.png" },
+    { id: 19, margin: 115, name: "Mack Rell",          file: "aai/tile024.png" },
+    { id: 20, margin: 115, name: "Manfred von Karma",          file: "aai/tile020.png" },
+    { id: 21, margin: 115, name: "Manny Coachen",          file: "aai/tile032.png" },
+    { id: 22, margin: 115, name: "Calisto Yew",          file: "aai/tile027.png" },
+    { id: 23, margin: 115, name: "Tyrell Badd",          file: "aai/tile028.png" },
+    
+    //Turnabout Ablaze
+    { id: 24, margin: 115, name: "Colias Palaeno",          file: "aai/tile031.png" },
+    { id: 25, margin: 115, name: "Quercos Alba",          file: "aai/tile033.png" },
+    { id: 26, margin: 115, name: "Larry Butz",          file: "aai/tile034.png" },
 ];
