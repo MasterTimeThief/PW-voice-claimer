@@ -189,9 +189,36 @@ button:active {
   border: 5px gray solid;
 }
 
+.disclaimer {
+  background-color: #20276D;
+  height: 20em;
+  margin-top: 5px;
+  width: 777px;
+  border-radius: 1em;
+  border: 5px gray solid;
+  padding: 0px 25px 0px 25px ;
+}
+
+.disclaimer .text{
+  font-size: 70px;
+  color: #FFFFFF;
+  height: 100%;
+  width: 97%;
+  margin-top: -10px;
+  border: none;
+  background: none;
+  font-family: "AA";
+  display: inline;
+  line-height: 100px;
+}
+
+.disclaimer .redtext{
+  color: #f70000;
+}
+
 .voice input{
   font-size: 70px;
-  color: #00F700;
+  color: #f70000;
   height: 100%;
   width: 97%;
   margin-top: -5px;

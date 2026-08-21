@@ -4,7 +4,9 @@
     <option *ngFor="let char of allCharacters" [value]="char.id">{{char.name}}</option>
   </select>
 </div>
-
+<div class="disclaimer">
+            <p class="text">Please do not redeem a voice for characters with</p><p class="text redtext"> red names.</p>
+        </div>
 <div class="wrapper">
   <ul class="character-list">
     <li *ngFor="let char of characters; let i = index">
